@@ -17,7 +17,7 @@ static const char *colors[][3]      = {
 	/*                   fg         bg         border   */
 	[SchemeNorm]     = { col_gray4, col_gray1, col_gray1 },
 	[SchemeSel]      = { col_cyan,  col_gray1, col_cyan  },
-	[SchemeStatus]   = { col_cyan,  col_gray1, "#000000" }, // Statusbar right {text,background,not used but cannot be empty}
+	[SchemeStatus]   = { "#e5c07b", col_gray1, "#000000" }, // Statusbar right {text,background,not used but cannot be empty}
 	[SchemeTagsSel]  = { col_cyan,  col_gray1, "#000000" }, // Tagbar left selected {text,background,not used but cannot be empty}
 	[SchemeTagsNorm] = { col_gray4, col_gray1, "#000000" }, // Tagbar left unselected {text,background,not used but cannot be empty}
 	[SchemeInfoSel]  = { col_cyan,  col_gray1, "#000000" }, // infobar middle selected {text,background,not used but cannot be empty}
