@@ -27,7 +27,7 @@ static const char *colors[][3]      = {
 /* status bar */
 static const Block blocks[] = {
 	/* fg     command				interval	signal */
-	{ col_cyan, "date +'%d/%m/%Y %H:%M'",	        1,		0       },
+	{ col_cyan, "date +'%d/%m/%Y %H:%M '",	        1,		0       },
 };
 
 /* inverse the order of the blocks, comment to disable */
@@ -87,19 +87,19 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_h,      rotatestack,    {.i = -1 } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
-	{ MODKEY,                       XK_Up,     incnmaster,     {.i = +1 } },
-	{ MODKEY,                       XK_Down,   incnmaster,     {.i = -1 } },
+	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
+	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
 	{ MODKEY,                       XK_BackSpace, zoom,        {0} },
-	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
+	{ MODKEY,             		XK_c,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,	                XK_f,  	   togglefloating, {0} },
-	{ MODKEY|ShiftMask,             XK_space,  togglefullscr,  {0} },
+	{ MODKEY,	                XK_space,  togglefullscr,  {0} },
 	{ MODKEY, 	                XK_Tab,    layoutscroll,   {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_Tab,    layoutscroll,   {.i = -1 } },
 	{ MODKEY,                       XK_bracketright,  viewnext,       {0} },
