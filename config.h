@@ -26,12 +26,13 @@ static const char *colors[][3]      = {
 
 /* status bar */
 static const Block blocks[] = {
-	/* fg     command				interval	signal */
-	{ col_cyan, "date +'%d/%m/%Y %H:%M '",	        1,		0       },
+	/* fg       command						interval	signal */
+	{ "#e06c75", "acpi | head -1 | cut -d',' -f2 | xargs",	        60,		0       },
+	{ "#e5c07b", "date +'%d/%m/%Y %H:%M '",	        		1,		0       },
 };
 
 /* inverse the order of the blocks, comment to disable */
-#define INVERSED	1
+/* #define INVERSED	1 */
 /* delimeter between blocks commands. NULL character ('\0') means no delimeter. */
 static char delimiter[] = " ";
 /* max number of character that one block command can output */
