@@ -50,6 +50,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   isterminal	noswallow	monitor */
 	{ "st",       NULL,       NULL,       0,            0,           1,             0,        	-1 },
 	{ "discord",  NULL,       NULL,       1 << 8,       0,		 0,		0,		-1 },
+	{ "zoom",     NULL,       NULL,       1 << 7,       0,		 0,		0,		-1 },
 	{ NULL,       NULL,       "Event Tester",  0,       0,           0,             1,        	-1 }, /* xev */
 };
 
